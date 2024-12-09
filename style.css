@@ -1,0 +1,410 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #454748;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section1 {
+    padding: 30px 20px;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section2 {
+    padding: 30px 20px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section3 {
+    padding: 30px 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Homepage Section */
+#home {
+    background: linear-gradient(to right, #99a0a3,#508ac5 );
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about {
+    background: white;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Projects Section */
+#projects {
+    background: linear-gradient(to right, #79b8d3,#4f96dc );
+}}
+
+.project {
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #99a0a3,#3e85cb );
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+}
+.progress {
+    background: #020638;
+    height: 10px;
+    border-radius: 10px;
+}
+
+/* Social Media Section */
+#social-media {
+    text-align: center;
+    padding: 0px 0px;
+    background: linear-gradient(to right, #99a0a3,#91b2d2 );
+}
+}
+
+#social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 50px; /* Icon size */
+    height: 50px;
+    border-radius: 50%; /* Optional: Rounded icon look */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Contact Section */
+#contact form {
+    background: linear-gradient(to right, #99a0a3,#3e85cb );
+   padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #141516;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #000;
+}
+/* Styling for Contact Heading */
+.contact-heading {
+    font-size: 2rem; /* Adjust heading size */
+    font-weight: bold;
+    color: #061a42; /* Dark color for the heading */
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+/* Styling for Contact Details */
+.contact-details {
+    font-size: 1.2rem; /* Adjust font size for details */
+    font-weight: normal;
+    color: #555; /* Slightly lighter color for details */
+    line-height: 1.8; /* Space between lines */
+    text-align: center;
+    margin-bottom: 20px; /* Add space below */
+}
+
+/* Add hover effect for better interaction */
+.contact-details:hover {
+    color: #007bff; /* Change text color to blue on hover */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 1.5rem; /* Smaller heading for small screens */
+    }
+
+    .contact-details {
+        font-size: 1rem; /* Smaller details for small screens */
+    }
+}
+
+/* Footer */
+.footer {
+    font-size: 15px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animated Images */
+.animated-image {
+    width: 350px;
+    height: 350px;
+    animation: fadeInScale 2s ease-in-out;
+    transition: transform 0.5s ease;
+    border-radius: 0; /* Square image */
+}
+
+.animated-image:hover {
+    transform: rotate(6deg) scale(1.1);
+}
+
+.scroll-image {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.scroll-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text and Gradient Styling */
+p {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+}
+.text-about {
+    font-size: 24px; /* Set your desired font size */
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+.name {
+    font-size: 100px;
+    font-family: 'Georgia', serif;
+    color: #252b2f;
+    animation: fadeInScale 2s ease-in-out;
+}
+
+.gradient-text {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, #3b82f6, #f43f5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+}
+/* Styles for the education section */
+.education {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #99a0a3,#99bee4 );
+  color: #333; /* Text color */
+    line-height: 1.8; /* Space between lines for readability */
+}
+
+.education h2 {
+    text-align: center;
+    font-size: 2.5rem; /* Title font size */
+    color: #252b2f; /* Darker color for the title */
+    margin-bottom: 20px; /* Spacing below the title */
+    text-transform: uppercase; /* Capitalize title */
+    letter-spacing: 1.5px; /* Slightly increase spacing between letters */
+}
+
+.education-item {
+    margin: 20px auto; /* Center align items */
+    padding: 20px;
+    background-color: #ffffff; /* White background for items */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Restrict width */
+    text-align: left; /* Align text to the left */
+}
+
+.education-item h3 {
+    font-size: 1.5rem; /* Increase size for headings */
+    color: #0073e6; /* Accent color */
+    margin-bottom: 10px; /* Add spacing below heading */
+}
+
+.education-item p {
+    font-size: 1rem; /* Paragraph font size */
+    color: #555; /* Softer gray color for descriptions */
+    margin: 5px 0; /* Space between lines */
+}
+
+/* Add hover effect for items */
+.education-item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
